@@ -33,14 +33,12 @@ body {
   font-weight: bold;
 }
 #navbarSupportedContent ul li a:hover {
-  color: #eeeeee;
-  text-decoration: underline;
-  transform: translateY(0.2rem);
+  color: #64ffda;
+  transform: translateY(-0.2rem);
 }
 #main {
   text-align: center;
   position: relative;
-  top: 5rem;
   padding: 10rem 3rem;
 }
 #main p {
@@ -83,6 +81,9 @@ body {
 .responsive {
   width: 100%;
   height: auto;
+  border: 1px solid #cdb400;
+  border-bottom-left-radius: 3rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.7);
 }
 .vline {
   border-left: 5px solid #cdb400;
@@ -113,6 +114,12 @@ body {
   margin-top: 10rem;
   padding: 10rem 3rem;
 }
+#me {
+  padding: 4rem 3rem;
+}
+#me:hover {
+  transform: scale(1.1);
+}
 #education .resume-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +148,10 @@ body {
 }
 .skills .imageicons img {
   margin: 3rem 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.skills .imageicons img:hover {
+  transform: translateY(-0.2rem);
 }
 #projects {
   margin-top: 10rem;
@@ -164,6 +175,12 @@ body {
   width: 35rem;
   font-size: 1.5rem;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+#projects .project .card:hover {
+  transform: translateY(-0.5rem);
+  background-color: #cdb400;
+  color: #000;
 }
 .project a {
   text-decoration: none;
@@ -198,12 +215,16 @@ body {
 #contact .contactlinks ul li {
   font-size: 2rem;
   margin: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 #contact .contactlinks ul li a {
   color: #000;
   background-color: #cdb400;
   border-radius: 1rem;
   padding: 1.5rem;
+}
+#contact .contactlinks ul li:hover {
+  transform: translateY(-0.5rem);
 }
 footer {
   text-align: center;
@@ -213,6 +234,9 @@ footer a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #64ffda;
+}
+footer a:hover {
+  color: #39a7a7;
 }
 @media only screen and (max-width: 600px) {
   #projects .project .card,
@@ -225,9 +249,15 @@ footer a {
     font-size: 40%;
   }
 }
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 250px) {
   html {
-    font-size: 32%;
+    font-size: 25%;
+  }
+  #main h1 {
+    font-size: 5rem;
+  }
+  #about .alignbtn a {
+    display: none;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -239,5 +269,22 @@ footer a {
   }
   html {
     font-size: 55%;
+  }
+}
+@media only screen and (max-width: 200px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #navbarSupportedContent {
+    background-color: #0a192f;
+    margin: 2.4rem;
+  }
+  #navbarSupportedContent ul {
+    display: inline-block;
+  }
+  #navbarSupportedContent ul li {
+    display: inline-block;
   }
 }

@@ -40,9 +40,8 @@ body {
 #main {
   text-align: center;
   position: relative;
-  top: 10rem;
-  width: 100vw;
-  height: 80vh;
+  top: 5rem;
+  padding: 10rem 3rem;
 }
 #main p {
   font-weight: bold;
@@ -79,6 +78,7 @@ body {
 #about {
   position: relative;
   margin-top: 10rem;
+  padding: 10rem 3rem;
 }
 .responsive {
   width: 100%;
@@ -111,6 +111,7 @@ body {
 #education {
   position: relative;
   margin-top: 10rem;
+  padding: 10rem 3rem;
 }
 #education .resume-wrap {
   display: flex;
@@ -132,6 +133,7 @@ body {
 #skills {
   position: relative;
   margin-top: 10rem;
+  padding: 10rem 3rem;
 }
 .skills {
   margin: 5rem auto;
@@ -143,6 +145,7 @@ body {
 #projects {
   margin-top: 10rem;
   position: relative;
+  padding: 10rem 3rem;
 }
 .project {
   margin: 8rem 0;
@@ -174,7 +177,8 @@ body {
 #contact {
   position: relative;
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
+  padding: 10rem 3rem;
 }
 #contact p {
   font-size: 1.5rem;
@@ -209,4 +213,31 @@ footer a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #64ffda;
+}
+@media only screen and (max-width: 600px) {
+  #projects .project .card,
+  #main .card,
+  #about .card {
+    width: 100%;
+    height: auto;
+  }
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 200px) {
+  html {
+    font-size: 32%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #projects .project .card,
+  #main .card,
+  #about .card {
+    width: 100%;
+    height: auto;
+  }
+  html {
+    font-size: 55%;
+  }
 }

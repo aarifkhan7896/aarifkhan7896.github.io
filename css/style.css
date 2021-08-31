@@ -238,6 +238,29 @@ footer a {
 footer a:hover {
   color: #39a7a7;
 }
+.loader-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20rem;
+}
+.loader {
+  border: 5px solid #0a192f;
+  border-top: 2px solid #ccd6f6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 600px) {
   #projects .project .card,
   #main .card,

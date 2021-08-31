@@ -63,6 +63,10 @@
     </nav>
     <!-- Navbar -->
 
+    <div class="loader-center">
+      <div class="loader"></div>
+    </div>
+
     <section>
       <div class="container" id="main" data-aos="fade-down">
         <p>Hi, my name is</p>
@@ -331,6 +335,17 @@
           }
         });
       });
+    </script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector(".loader").style.visibility = "visible";
+        } else {
+          document.querySelector(".loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
     </script>
   </body>
 </html>

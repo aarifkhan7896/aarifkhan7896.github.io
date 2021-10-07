@@ -14,24 +14,31 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
-      style="padding: 0"
+      class="
+        nav
+        d-flex
+        justify-content-between
+        align-items-center
+        px-5
+        sticky-top
+      "
     >
-      <div class="container-fluid navbar" id="brand">
-        <a class="navbar-brand ms-5" href="#main">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+      <div class="nav-brand">
+        <h1><a href="#main">Portfolio</a></h1>
+      </div>
+      <a
+        href="#"
+        class="btn btn-outline-dark toggle-button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapse"
+      >
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </a>
+      <div class="collapse" id="collapse">
+        <div class="navbar-links">
+          <ul>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#main"
                 >Home</a
@@ -123,57 +130,51 @@
 
     <section>
       <div class="container" id="education" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-9 col-sm-8">
-            <h1 class="vline">&nbsp; Education</h1>
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-5">
-                <i class="fas fa-graduation-cap fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-5">
-                <h1>Dr. A.P.J. Abdul Kalam Technical University</h1>
-                <span>Master of Computer Applications</span>
-                <p>(2019 - 2021)</p>
-              </div>
+        <h1 class="vline">&nbsp; Education</h1>
+        <div class="education">
+          <div class="resume-wrap" data-aos="fade-up">
+            <div class="icon ms-5 py-5">
+              <i class="fas fa-graduation-cap fa-4x"></i>
             </div>
-            <hr />
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-5">
-                <i class="fas fa-graduation-cap fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-5">
-                <h1>Jamia Hamdard</h1>
-                <span>Bachelor of Computer Applications</span>
-                <p>(2015 - 2018)</p>
-              </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="details py-5">
+              <h1>Dr. A.P.J. Abdul Kalam Technical University</h1>
+              <span>Master of Computer Applications</span>
+              <p>(2019 - 2021)</p>
             </div>
-            <hr />
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-5">
-                <i class="fas fa-book-open fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-5">
-                <h1>Red Roses Public School</h1>
-                <span>12th (CBSE)</span>
-                <p>(2014 - 2015)</p>
-              </div>
+          </div>
+          <div class="resume-wrap" data-aos="fade-up">
+            <div class="icon ms-5 py-5">
+              <i class="fas fa-graduation-cap fa-4x"></i>
             </div>
-            <hr />
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-5">
-                <i class="fas fa-book-open fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-5">
-                <h1>Red Roses Public School</h1>
-                <span>10th (CBSE)</span>
-                <p>(2012 - 2013)</p>
-              </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="details py-5">
+              <h1>Jamia Hamdard</h1>
+              <span>Bachelor of Computer Applications</span>
+              <p>(2015 - 2018)</p>
             </div>
-            <hr />
+          </div>
+          <div class="resume-wrap" data-aos="fade-up">
+            <div class="icon ms-5 py-5">
+              <i class="fas fa-book-open fa-4x"></i>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="details py-5">
+              <h1>Red Roses Public School</h1>
+              <span>12th (CBSE)</span>
+              <p>(2014 - 2015)</p>
+            </div>
+          </div>
+          <div class="resume-wrap" data-aos="fade-up">
+            <div class="icon ms-5 py-5">
+              <i class="fas fa-book-open fa-4x"></i>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="details py-5">
+              <h1>Red Roses Public School</h1>
+              <span>10th (CBSE)</span>
+              <p>(2012 - 2013)</p>
+            </div>
           </div>
         </div>
       </div>
@@ -184,22 +185,38 @@
         <h1 class="vline">&nbsp; Skills</h1>
         <div class="skills">
           <div class="imageicons" data-aos="fade-up">
-            <img src="img/skills/html.png" alt="html" />
-            <img src="img/skills/css.png" alt="css" />
-            <img src="img/skills/javascript.png" alt="javascript" />
-            <img src="img/skills/bootstrap.png" alt="bootstrap" />
+            <img src="img/skills/html.png" alt="html" title="HTML" />
+            <img src="img/skills/css.png" alt="css" title="CSS" />
+            <img
+              src="img/skills/javascript.png"
+              alt="javascript"
+              title="JavaScript"
+            />
+            <img
+              src="img/skills/bootstrap.png"
+              alt="bootstrap"
+              title="Bootstrap"
+            />
           </div>
           <div class="imageicons" data-aos="fade-up">
-            <img src="img/skills/c.png" alt="C" />
-            <img src="img/skills/java.png" alt="java" />
-            <img src="img/skills/photoshop.png" alt="photoshop" />
-            <img src="img/skills/vscode.png" alt="vscode" />
+            <img src="img/skills/c.png" alt="C" title="C" />
+            <img src="img/skills/java.png" alt="java" title="Java" />
+            <img
+              src="img/skills/photoshop.png"
+              alt="photoshop"
+              title="Photoshop"
+            />
+            <img src="img/skills/vscode.png" alt="vscode" title="VSCode" />
           </div>
           <div class="imageicons" data-aos="fade-up">
-            <img src="img/skills/lightroom.png" alt="lightroom" />
-            <img src="img/skills/php.png" alt="php" />
-            <img src="img/skills/jquery.png" alt="jquery" />
-            <img src="img/skills/mysql.png" alt="" />
+            <img
+              src="img/skills/lightroom.png"
+              alt="lightroom"
+              title="Lightroom"
+            />
+            <img src="img/skills/php.png" alt="php" title="PHP" />
+            <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
+            <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
           </div>
         </div>
       </div>
@@ -241,15 +258,19 @@
               </a>
             </div>
             <div class="col-md-4" data-aos="fade-up">
-              <a href="#">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#hospitalproject"
+              >
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Courier Tracking System</h5>
+                    <h5 class="card-title">Hospital Management system</h5>
                     <p class="card-text">
-                      Courier tracking system is used to manage the work
-                      regarding the services of the courier in an effective
-                      manner. It stores the information regarding the customer
-                      and his material, which has to be shipped.
+                      The hospital management system is a computer system that
+                      helps in managing the information related to health care.
+                      This project includes the registration of patients,
+                      storing their details into the system.
                     </p>
                   </div>
                 </div>
@@ -259,6 +280,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="hospitalproject"
+      tabindex="-1"
+      aria-labelledby="hospitalprojectLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title text-dark fs-2 fw-bold"
+              id="hospitalprojectLabel"
+            >
+              Hospital Management System
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/hospital.png" alt="Hospital Management System" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
 
     <section>
       <div class="container" id="contact" data-aos="fade-up">
@@ -329,9 +382,9 @@
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
           if (scroll > 300) {
-            $(".navbar").css("background", "#43809f ");
+            $(".nav").css("background", "#43809f ");
           } else {
-            $(".navbar").css("background", "#39a7a7");
+            $(".nav").css("background", "#39a7a7");
           }
         });
       });

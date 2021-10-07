@@ -26,17 +26,12 @@
       <div class="nav-brand">
         <h1><a href="#main">Portfolio</a></h1>
       </div>
-      <a
-        href="#"
-        class="btn btn-outline-dark toggle-button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse"
-      >
+      <a href="#" class="btn btn-outline-secondary toggle-button">
         <div class="bars"></div>
         <div class="bars"></div>
         <div class="bars"></div>
       </a>
-      <div class="collapse" id="collapse">
+      <div id="collapse">
         <div class="navbar-links">
           <ul>
             <li class="nav-item">
@@ -240,7 +235,11 @@
               </a>
             </div>
             <div class="col-md-4" data-aos="fade-up">
-              <a href="#">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#libraryproject"
+              >
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Library Management System</h5>
@@ -278,7 +277,7 @@
       </div>
     </section>
 
-    <!-- Modal -->
+    <!--Hospital Modal -->
     <div
       class="modal fade"
       id="hospitalproject"
@@ -312,7 +311,43 @@
         </div>
       </div>
     </div>
-    <!-- Modal -->
+    <!--Hospital Modal -->
+
+    <!--Library Modal -->
+    <div
+      class="modal fade"
+      id="libraryproject"
+      tabindex="-1"
+      aria-labelledby="libraryprojectLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title text-dark fs-2 fw-bold"
+              id="libraryprojectLabel"
+            >
+              Library Management System
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="responsive"
+              src="img/library.png"
+              alt="Hospital Management System"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Library Modal -->
 
     <section>
       <div class="container" id="contact" data-aos="fade-up">
@@ -400,6 +435,18 @@
           document.querySelector("body").style.visibility = "visible";
         }
       };
+    </script>
+    <script>
+      $(document).ready(function () {
+        if (screen.width < 700) {
+          $("#collapse").hide();
+        } else {
+          $("#collapse").show();
+        }
+        $(".toggle-button").click(function () {
+          $("#collapse").slideToggle();
+        });
+      });
     </script>
   </body>
 </html>

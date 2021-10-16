@@ -20,7 +20,7 @@
         justify-content-between
         align-items-center
         px-5
-        sticky-top
+        fixed-top
       "
     >
       <div class="nav-brand">
@@ -69,51 +69,49 @@
       <div class="loader"></div>
     </div>
 
+    <div class="bg1">
+      <div class="bg1-overlay">
+
     <section>
       <div class="container" id="main" data-aos="fade-down">
         <p>Hi, my name is</p>
         <h1 class="display-1">Aarif <span>Khan</span></h1>
-        <h6 id="build">I build things for the web.</h6>
-
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              I'M A WEB DEVELOPER & PROGRAMMER LIVING IN DELHI, INDIA. I MAKE
-              WEB APPLICATIONS USUALLY WITH PHP. MY SPECIALTY IS FULL WEBSITE
-              STRATEGY, DESIGN AND DEVELOPMENT. IF YOU HAVE A PROJECT OR
-              CREATIVE NEED THAT I CAN HELP WITH,
-              <span>PLEASE GET IN TOUCH.</span>
-            </p>
-          </div>
-        </div>
+        <h6>I build things for the web.</h6>
+        <h3>I'M A WEB DEVELOPER & PROGRAMMER LIVING IN DELHI, INDIA. I MAKE
+          WEB APPLICATIONS USUALLY WITH PHP. MY SPECIALTY IS FULL WEBSITE
+          STRATEGY, DESIGN AND DEVELOPMENT. IF YOU HAVE A PROJECT OR
+          CREATIVE NEED THAT I CAN HELP WITH,
+          <span>PLEASE GET IN TOUCH.</h3>
       </div>
     </section>
+  </div>
+</div>
 
-    <section>
-      <div class="container" id="about" data-aos="fade-up">
+    <section  id="about" >
+      <div class="container-fluid" data-aos="fade-up">
         <div class="row">
           <div class="col-md-9 col-sm-9">
-            <h1 class="vline">&nbsp; About Me</h1>
+            <h1 class="vline text-dark">&nbsp; About Me</h1>
             <div class="card">
               <div class="card-body">
-                <p class="card-text">
-                  <span>HELLO! </span> <br />
-                  MY NAME IS AARIF KHAN AND I ENJOY BUILDING WEBSITES. MY
-                  INTEREST IN WEB DEVELOPMENT STARTED IN 2015 WHEN I DESIGNED A
-                  WEB PAGE AS AN ASSIGNMENT IN A COMPETITION.
+                <p class="card-text text-dark fs-3 py-3">
+                  <span class="text-secondary fw-bold fs-1">HELLO! </span> <br />
+                    MY NAME IS AARIF KHAN AND I ENJOY BUILDING WEBSITES. MY
+                    INTEREST IN WEB DEVELOPMENT STARTED IN 2015 WHEN I DESIGNED A
+                    WEB PAGE AS AN ASSIGNMENT IN A COMPETITION.
                   <br />
                   <br />
                   MY MAIN FOCUS THESE DAYS IS TO BUILD SUCH PROJECTS THAT ADAPT
                   CHANGING ENVIRONMENT AND CAN BE MODIFIED AS AND WHEN REQUIRED.
                 </p>
+                <div class="alignbtn">
+                  <a
+                    href="https://www.linkedin.com/in/aarifkhan7896"
+                    class="btn btn-outline-secondary"
+                    >Connect with me on Linkedin</a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="alignbtn" data-aos="fade-up">
-              <a
-                href="https://www.linkedin.com/in/aarifkhan7896"
-                class="btn btn-outline-secondary"
-                >Connect with me on Linkedin</a
-              >
             </div>
           </div>
           <div class="col-md-3 col-sm-3" id="me">
@@ -124,11 +122,11 @@
     </section>
 
     <section>
-      <div class="container" id="education" data-aos="fade-up">
+      <div class="container-fluid" id="education" data-aos="fade-up">
         <h1 class="vline">&nbsp; Education</h1>
         <div class="education">
           <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-5">
+            <div class="icon ms-5 py-5 m-3">
               <i class="fas fa-graduation-cap fa-4x"></i>
             </div>
             &nbsp;&nbsp;&nbsp;
@@ -139,7 +137,7 @@
             </div>
           </div>
           <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-5">
+            <div class="icon ms-5 py-5 m-3">
               <i class="fas fa-graduation-cap fa-4x"></i>
             </div>
             &nbsp;&nbsp;&nbsp;
@@ -150,7 +148,7 @@
             </div>
           </div>
           <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-5">
+            <div class="icon ms-5 py-5 m-3">
               <i class="fas fa-book-open fa-4x"></i>
             </div>
             &nbsp;&nbsp;&nbsp;
@@ -161,7 +159,7 @@
             </div>
           </div>
           <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-5">
+            <div class="icon ms-5 py-5 m-3">
               <i class="fas fa-book-open fa-4x"></i>
             </div>
             &nbsp;&nbsp;&nbsp;
@@ -175,9 +173,9 @@
       </div>
     </section>
 
-    <section>
-      <div class="container" id="skills" data-aos="fade-up">
-        <h1 class="vline">&nbsp; Skills</h1>
+    <section id="skills">
+      <div class="container-fluid" data-aos="fade-up">
+        <h1 class="vline text-dark">&nbsp; Skills</h1>
         <div class="skills">
           <div class="imageicons" data-aos="fade-up">
             <img src="img/skills/html.png" alt="html" title="HTML" />
@@ -198,6 +196,7 @@
               title="Lightroom"
             />
             <img src="img/skills/php.png" alt="php" title="PHP" />
+            <br>
             <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
 
             <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
@@ -215,62 +214,37 @@
     </section>
 
     <section>
-      <div class="container" id="projects" data-aos="fade-up">
+      <div class="container-fluid" id="projects" data-aos="fade-up">
         <h1 class="vline">&nbsp; Projects</h1>
         <div class="project">
-          <div class="row">
-            <div class="col-md-4" data-aos="fade-up">
-              <a href="#">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Online Discussion Forum</h5>
-                    <p class="card-text">
-                      This Online forum can be used for many purposes, such as
-                      helping learners to review material prior to an assignment
-                      or exam, involving students in a discussion of the course
-                      material before coming to class.
-                    </p>
-                  </div>
-                </div>
-              </a>
+          <div class="resume-wrap text-center p-4" data-aos="fade-up">
+            <div class="details py-5">
+              <h1 class="text-warning">Online Discussion Forum</h1>
+              <p class="fs-2">This Online forum can be used for many purposes, such as
+                helping learners to review material prior to an assignment
+                or exam, involving students in a discussion of the course
+                material before coming to class.</p>
+                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#">View</button>
             </div>
-            <div class="col-md-4" data-aos="fade-up">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#libraryproject"
-              >
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Library Management System</h5>
-                    <p class="card-text">
-                      A library management system is ERP software that is
-                      designed & developed to manage all the in-house functions
-                      of a library. A librarian requires maintaining a database
-                      of new books.
-                    </p>
-                  </div>
-                </div>
-              </a>
+          </div>
+          <div class="resume-wrap text-center p-4" data-aos="fade-up">
+            <div class="details py-5">
+              <h1 class="text-warning">Library Management System</h1>
+              <p class="fs-2">A library management system is ERP software that is
+                designed & developed to manage all the in-house functions
+                of a library. A librarian requires maintaining a database
+                of new books.</p>
+                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#libraryproject">View</button>
             </div>
-            <div class="col-md-4" data-aos="fade-up">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#hospitalproject"
-              >
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Hospital Management system</h5>
-                    <p class="card-text">
-                      The hospital management system is a computer system that
-                      helps in managing the information related to health care.
-                      This project includes the registration of patients,
-                      storing their details into the system.
-                    </p>
-                  </div>
-                </div>
-              </a>
+          </div>
+          <div class="resume-wrap text-center p-4" data-aos="fade-up">
+            <div class="details py-5">
+              <h1 class="text-warning">Hospital Management system</h1>
+              <p class="fs-2">The hospital management system is a computer system that
+                helps in managing the information related to health care.
+                This project includes the registration of patients,
+                storing their details into the system.</p>
+                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#hospitalproject">View</button>
             </div>
           </div>
         </div>
@@ -348,10 +322,12 @@
       </div>
     </div>
     <!--Library Modal -->
+<div class="bg-2">
+  <div class="bg2-overlay">
 
-    <section>
-      <div class="container" id="contact" data-aos="fade-up">
-        <h1 class="vline">&nbsp; Get in Touch</h1>
+    <section id="contact">
+      <div class="container"  data-aos="fade-up">
+        <h1 class="text-center">&nbsp; Get in Touch</h1>
         <p data-aos="fade-up">
           I'M CURRENTLY AVAILABLE FOR FREELANCE PROJECTS OR FULL-TIME WORK. IF
           YOU'RE INTERESTED IN WORKING WITH ME, PLEASE GET IN TOUCH USING ONE OF
@@ -388,8 +364,9 @@
         </div>
       </div>
     </section>
-    <hr />
-    <section>
+  </div>
+</div>
+    <section class="bg-primary">
       <footer>
         <h1>
           <a href="https://www.linkedin.com/in/aarifkhan7896"

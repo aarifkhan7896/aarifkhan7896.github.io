@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   width: 4rem;
   height: 3rem;
-  right: 1rem;
+  right: 2rem;
   top: 3rem;
   border: 2px solid rgba(255, 255, 255, 0.404);
   border-radius: 0.5rem;
@@ -61,10 +61,33 @@ body {
   color: #f3aca8;
   text-decoration: underline;
 }
+.bg1 {
+  background-image: url("../img/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 650px;
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+}
+.bg1-overlay {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 650px;
+  z-index: 1;
+  opacity: 0.9;
+}
 #main {
-  text-align: center;
   position: relative;
-  padding: 10rem 3rem;
+  top: 10rem;
+  z-index: 2;
+  text-align: center;
+  padding: 5rem;
 }
 #main p {
   font-weight: bold;
@@ -75,31 +98,19 @@ body {
   font-weight: bold;
   color: #ccd6f6;
   text-transform: uppercase;
-  font-size: 8rem;
+  font-size: 9rem;
+  text-shadow: 0px 3px 8px rgba(238, 236, 236, 0.342);
 }
 #main span,
 .card span {
   color: #cdb400;
 }
 #main h6 {
-  color: #ccd6f6;
-  font-size: 2rem;
-}
-#main .card {
-  width: 100%;
-  background-color: transparent;
-  margin: 5rem 0;
-  padding: 3rem;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
-  border-left: 3px solid #39a7a7;
-  border-radius: 1rem;
-}
-#main .card p {
-  color: #eeeeee;
-  font-size: 1.5rem;
-}
-#build {
+  color: dodgerblue;
+  font-size: 2.5rem;
+  font-weight: bold;
   animation: build 1s ease-in-out infinite;
+  margin: 2rem 0;
 }
 @keyframes build {
   0% {
@@ -112,10 +123,15 @@ body {
     transform: translateY(1rem);
   }
 }
+#main h3 {
+  margin-top: 5rem;
+  font-weight: bold;
+  line-height: 0.7cm;
+}
 #about {
   position: relative;
-  margin-top: 10rem;
-  padding: 10rem 3rem;
+  background-color: lavender;
+  padding: 10rem 5rem;
 }
 .responsive {
   width: 100%;
@@ -130,55 +146,55 @@ body {
 }
 #about .card {
   width: 100%;
+  height: auto;
   background-color: transparent;
+  color: #000;
   margin: 4rem 0;
-  padding: 3rem;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
-  border-left: 3px solid #39a7a7;
+  padding: 1.5rem;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 #about a {
-  width: 20rem;
-  height: 4rem;
+  width: 40%;
+  margin: auto;
+  height: auto;
   padding: 1rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
-}
-#about .alignbtn {
   text-align: center;
-  margin: 5rem 0;
+}
+#me {
+  padding: 7rem 3rem;
 }
 #education {
   position: relative;
-  margin-top: 10rem;
-  padding: 10rem 3rem;
-}
-#me {
-  padding: 4rem 3rem;
-}
-
-#me:hover .image-overlay {
-  transform: scale(1.1);
+  padding: 10rem 5rem;
 }
 .resume-wrap {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
-  border-left: 3px solid #39a7a7;
+  border: 1px solid #384150;
   border-radius: 1rem;
-  margin: 1.5rem 0;
+  width: 55rem;
+  margin: 2rem 0;
 }
 .education {
   margin: 4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 #education .resume-wrap {
   display: flex;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 #education .resume-wrap h1 {
   color: #cdb400;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2em;
 }
 #education .resume-wrap span {
   color: #ccd6f6;
@@ -190,49 +206,46 @@ body {
 }
 #skills {
   position: relative;
-  margin-top: 10rem;
-  padding: 10rem 3rem;
+  padding: 10rem 5rem;
+  background-color: lavender;
 }
 .skills {
   margin: 5rem auto;
   text-align: center;
 }
 .skills .imageicons img {
-  margin: 2.5rem;
+  margin: 2rem 1rem;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
-  border-left: 3px solid #39a7a7;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+  border: 1px solid grey;
   border-radius: 1rem;
-  padding: 0.7rem;
+  padding: 0.2rem;
 }
 .skills .imageicons img:hover {
   transform: translateY(-0.5rem);
 }
 #projects {
-  margin-top: 10rem;
   position: relative;
-  padding: 10rem 3rem;
-}
-.project {
-  margin: 8rem 0;
+  padding: 10rem 5rem;
 }
 #projects .project {
+  margin: 8rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 #projects .project .card {
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   background-color: transparent;
-  width: 35rem;
+  width: 50rem;
   font-size: 1.5rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
   border-left: 3px solid #39a7a7;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 #projects .project .card:hover {
   transform: translateY(-0.5rem);
@@ -251,17 +264,44 @@ body {
   font-size: 2rem;
   color: #39a7a7;
 }
+.bg-2 {
+  background-image: url("../img/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 100%;
+  height: auto;
+}
+.bg2-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0.8;
+}
 #contact {
   position: relative;
-  margin-top: 10rem;
-  margin-bottom: 15rem;
-  padding: 10rem 3rem;
+  top: 0;
+  padding: 10rem 5rem;
+  z-index: 2;
 }
 #contact p {
   font-size: 1.5rem;
   text-align: center;
   margin: 5rem 0;
   color: #ccd6f6;
+}
+#contact h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  background: linear-gradient(to right, #67d6d6 0%, #7c57a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #contact .contactlinks {
   text-align: center;
@@ -280,8 +320,8 @@ body {
 #contact .contactlinks ul li a {
   color: #000;
   background-color: #cdb400;
-  padding: 1.5rem;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+  padding: 1.2rem;
+  border: 1px solid #fff;
   border-radius: 1rem;
 }
 #contact .contactlinks ul li:hover {
@@ -289,15 +329,15 @@ body {
 }
 footer {
   text-align: center;
-  height: 5rem;
+  height: 4rem;
 }
 footer a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #64ffda;
+  color: #fff;
 }
 footer a:hover {
-  color: #39a7a7;
+  color: #000;
 }
 .loader-center {
   position: relative;
@@ -322,69 +362,57 @@ footer a:hover {
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 600px) {
-  #projects .project .card,
-  #main .card,
-  #about .card {
-    width: 100%;
-    height: auto;
-  }
+@media only screen and (max-width: 1100px) {
   html {
-    font-size: 40%;
-  }
-  .imageicons img {
-    width: 5rem;
-    height: auto;
-    margin: 0.5rem;
+    font-size: 60%;
   }
 }
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 700px) {
   html {
-    font-size: 25%;
+    font-size: 45%;
   }
   #main h1 {
     font-size: 5rem;
   }
-  #about .alignbtn a {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  #projects .project .card,
-  #main .card,
-  #about .card {
-    width: 100%;
-    height: auto;
-  }
-  html {
-    font-size: 55%;
-  }
-  .nav ul {
-    display: flex;
-    visibility: visible;
-  }
-}
-@media only screen and (max-width: 200px) {
-  html {
-    font-size: 20%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .toggle-button {
-    display: flex;
+  #contact h1 {
+    font-size: 3rem;
   }
   .nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
   }
-  .nav ul {
+  .navbar-links ul {
     display: flex;
     flex-direction: column;
-    padding-top: 1.5rem;
   }
-  .nav ul li a {
-    font-size: 2rem;
+  .toggle-button {
+    display: flex;
+  }
+  .project .card {
+    width: 30%;
+    height: auto;
+  }
+  }
+  #about a {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html{
+    font-size: 45%;
+  }
+  #main h3 {
+    font-size: 1.2rem;
+  }
+  #main h1 {
+    font-size: 3.5rem;
+  }
+  .project .card-title{
+    font-size: .2rem;
+  }
+  .project .card {
+   width: 100%;
+   height: auto;
   }
 }

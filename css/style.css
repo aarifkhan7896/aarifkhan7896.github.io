@@ -111,6 +111,8 @@ body {
   font-weight: bold;
   animation: build 1s ease-in-out infinite;
   margin: 2rem 0;
+  position: relative;
+  top: 2rem;
 }
 @keyframes build {
   0% {
@@ -127,6 +129,8 @@ body {
   margin-top: 5rem;
   font-weight: bold;
   line-height: 0.7cm;
+  position: relative;
+  top: 5rem;
 }
 #about {
   position: relative;
@@ -392,27 +396,32 @@ footer a:hover {
     width: 30%;
     height: auto;
   }
-  }
-  #about a {
-    width: 100%;
-    height: auto;
-  }
 }
+
 @media only screen and (max-width: 300px) {
-  html{
+  html {
     font-size: 45%;
   }
   #main h3 {
     font-size: 1.2rem;
   }
   #main h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
-  .project .card-title{
-    font-size: .2rem;
+  .project .card-title {
+    font-size: 0.2rem;
   }
   .project .card {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .education .resume-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

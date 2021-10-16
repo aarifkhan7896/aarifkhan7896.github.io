@@ -218,7 +218,7 @@ body {
   text-align: center;
 }
 .skills .imageicons img {
-  margin: 2rem 1rem;
+  margin: 2rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
   border: 1px solid grey;
@@ -378,8 +378,16 @@ footer a:hover {
   #main h1 {
     font-size: 5rem;
   }
+  #main h3 {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+  #contact p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
   #contact h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .nav {
     display: flex;
@@ -406,7 +414,7 @@ footer a:hover {
     font-size: 1.2rem;
   }
   #main h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .project .card-title {
     font-size: 0.2rem;

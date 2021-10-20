@@ -17,23 +17,6 @@ body {
   color: var(--white);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.toggle-button {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 4rem;
-  height: 3rem;
-  right: 2rem;
-  top: 3rem;
-  border: 2px solid rgba(255, 255, 255, 0.404);
-  border-radius: 0.5rem;
-}
-.toggle-button .bars {
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-}
 .nav {
   background-color: #39a7a7;
   padding: 2rem 0;
@@ -69,8 +52,6 @@ body {
   background-attachment: scroll;
   min-height: 650px;
   margin-top: 5rem;
-  width: 100%;
-  height: auto;
 }
 .bg1-overlay {
   position: absolute;
@@ -100,6 +81,18 @@ body {
   text-transform: uppercase;
   font-size: 9rem;
   text-shadow: 0px 3px 8px rgba(238, 236, 236, 0.342);
+}
+#main #para span,
+#contact h1 {
+  animation: colored 1s linear infinite 0.5s;
+}
+@keyframes colored {
+  from {
+    color: #69b6b6;
+  }
+  to {
+    color: #d49391;
+  }
 }
 #main span,
 .card span {
@@ -134,44 +127,21 @@ body {
 }
 #about {
   position: relative;
-  background-color: lavender;
-  padding: 10rem 5rem;
+  padding: 9rem 5rem;
+}
+.about {
+  margin: 5rem 0;
 }
 .responsive {
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
-  border-left: 3px solid #39a7a7;
-  border-radius: 1rem;
+  box-shadow: 3px 2px 1px #af6a66;
 }
 .vline {
   border-left: 5px solid #cdb400;
   height: 3rem;
 }
-#about .card {
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-  color: #000;
-  margin: 4rem 0;
-  padding: 1.5rem;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-#about a {
-  width: 40%;
-  margin: auto;
-  height: auto;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
 #me {
-  padding: 7rem 3rem;
+  position: relative;
+  top: 6rem;
 }
 #education {
   position: relative;
@@ -185,7 +155,7 @@ body {
   margin: 2rem 0;
 }
 .education {
-  margin: 4rem 0;
+  margin: 8rem 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -210,8 +180,8 @@ body {
 }
 #skills {
   position: relative;
-  padding: 10rem 5rem;
   background-color: lavender;
+  padding: 10rem 5rem;
 }
 .skills {
   margin: 5rem auto;
@@ -269,24 +239,12 @@ body {
   color: #39a7a7;
 }
 .bg-2 {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg-3.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  min-height: 500px;
-  width: 100%;
-  height: auto;
-}
-.bg2-overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  opacity: 0.8;
+  min-height: 530px;
 }
 #contact {
   position: relative;
@@ -298,14 +256,14 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin: 5rem 0;
-  color: #ccd6f6;
+  color: #fff;
+  font-weight: 700;
 }
 #contact h1 {
   font-weight: bold;
   font-size: 5rem;
-  background: linear-gradient(to right, #67d6d6 0%, #7c57a8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 #contact .contactlinks {
   text-align: center;
@@ -317,19 +275,19 @@ body {
   align-items: center;
 }
 #contact .contactlinks ul li {
-  font-size: 2rem;
-  margin: 2rem;
-  transition: all 0.3s ease-in-out;
+  margin: 1.5rem;
 }
 #contact .contactlinks ul li a {
   color: #000;
   background-color: #cdb400;
-  padding: 1.2rem;
+  padding: 1rem 1.4rem;
   border: 1px solid #fff;
-  border-radius: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
 }
-#contact .contactlinks ul li:hover {
-  transform: translateY(-0.5rem);
+#contact .contactlinks ul li a:hover {
+  color: #fff;
 }
 footer {
   text-align: center;
@@ -395,10 +353,8 @@ footer a:hover {
   }
   .navbar-links ul {
     display: flex;
-    flex-direction: column;
-  }
-  .toggle-button {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .project .card {
     width: 30%;
@@ -408,13 +364,7 @@ footer a:hover {
 
 @media only screen and (max-width: 300px) {
   html {
-    font-size: 45%;
-  }
-  #main h3 {
-    font-size: 1.2rem;
-  }
-  #main h1 {
-    font-size: 4.5rem;
+    font-size: 40%;
   }
   .project .card-title {
     font-size: 0.2rem;
@@ -422,6 +372,19 @@ footer a:hover {
   .project .card {
     width: 100%;
     height: auto;
+  }
+  #main h3 {
+    font-size: 2.1rem !important;
+    font-weight: 400;
+  }
+  #main h1 {
+    font-size: 3.5rem !important;
+  }
+  #main h6 {
+    font-size: 2rem !important;
+  }
+  #main p {
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -431,5 +394,23 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  #main h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  #main h1 {
+    font-size: 7rem;
+  }
+  #main h6 {
+    font-size: 3rem;
+  }
+  #main p {
+    font-size: 2rem;
+  }
+  #main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }

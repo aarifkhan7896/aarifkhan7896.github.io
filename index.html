@@ -26,9 +26,15 @@
       <div class="nav-brand">
         <h1><a href="#main">Portfolio</a></h1>
       </div>
+      <div id="navbars">
+        <span><i class="fas fa-bars" onclick="openNav()"></i></span>
+      </div>
       <div id="collapse">
-        <div class="navbar-links">
-          <ul>
+        <div class="navbar-links" id="navbar-links">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <ul id="navlist">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#main"
                 >Home</a
@@ -66,50 +72,64 @@
 
     <div class="bg1 img-fluid">
       <div class="bg1-overlay img-fluid">
-
-    <section>
-      <div class="container" id="main" data-aos="fade-down">
-        <p>Hi, my name is</p>
-        <h1 class="display-1">Aarif <span>Khan</span></h1>
-        <h6>I build things for the web.</h6>
-        <h3 id="para">I'M A WEB DEVELOPER & PROGRAMMER LIVING IN DELHI, INDIA. I MAKE
-          WEB APPLICATIONS USUALLY WITH PHP. MY SPECIALTY IS FULL WEBSITE
-          STRATEGY, DESIGN AND DEVELOPMENT. IF YOU HAVE A PROJECT OR
-          CREATIVE NEED THAT I CAN HELP WITH,
-          <span>PLEASE GET IN TOUCH.</h3>
+        <section>
+          <div class="container" id="main" data-aos="fade-up">
+            <p>Hi, my name is</p>
+            <h1 class="display-1">Aarif <span>Khan</span></h1>
+            <h6>I build things for the web.</h6>
+            <h3 id="para">
+              I'm a web developer & programmer living in delhi, india. I make
+              web applications usually with php. My specialty is full website
+              strategy, design and development. If you have a project or
+              creative need that i can help with,
+              <span>please get in touch.</span>
+            </h3>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-</div>
+    </div>
 
-
-    <section  id="about" >
+    <section id="about">
       <div class="container-fluid" data-aos="fade-up">
         <h1 class="vline text-light">&nbsp; About Me</h1>
-          <div class="about d-flex flex-column justify-content-around align-items-center">
-              <img data-aos="fade-up" src="img/me.jpg" width="250px" height="200px" class="my-4 responsive img-fluid rounded-circle" alt="me" />
-            <div class="resume-wrap p-5 my-5" style="width: 80%;text-align: justify;height: auto;"  data-aos="fade-up">
-              <div class="details">
-                <p class="fs-3 py-3"><span class="text-warning fw-bold fs-1">HELLO! </span> <br />
-                  MY NAME IS AARIF KHAN AND I ENJOY BUILDING WEBSITES. MY
-                  INTEREST IN WEB DEVELOPMENT STARTED IN 2015 WHEN I DESIGNED A
-                  WEB PAGE AS AN ASSIGNMENT IN A COMPETITION.</p>
-              </div>
-           </div>
-            <div class="alignbtn my-4" data-aos="fade-up">
-              <a
-                href="https://www.linkedin.com/in/aarifkhan7896"
-                class="btn btn-outline-warning px-5 fs-2"
-                >Connect with me on Linkedin</a
-              >
-            </div>
+        <div
+          class="
+            about
+            d-flex
+            flex-column
+            justify-content-around
+            align-items-center
+          "
+        >
+          <img
+            data-aos="fade-up"
+            src="img/me.jpg"
+            width="250px"
+            height="200px"
+            class="my-4 responsive img-fluid rounded-circle"
+            alt="me"
+          />
+          <span class="text-danger fw-bold fs-1 pt-5" data-aos="fade-up"
+            >HELLO!
+          </span>
+          <br />
+          <h3 style="width: 90%" class="py-5 text-center" data-aos="fade-up">
+            My name is Aarif Khan and i enjoy building websites. My interest in
+            web development started in 2015 when i designed a web page as an
+            assignment in a competition.
+          </h3>
+          <div class="alignbtn">
+            <a href="https://www.linkedin.com/in/aarifkhan7896"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
-       </div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <div class="container-fluid" id="education" data-aos="fade-up">
-        <h1 class="vline">&nbsp; Education</h1>
+      <div class="container-fluid" id="education">
+        <h1 class="vline text-dark" data-aos="fade-up">&nbsp; Education</h1>
         <div class="education">
           <div class="resume-wrap" data-aos="fade-up">
             <div class="icon ms-5 py-2 m-3">
@@ -158,10 +178,10 @@
         </div>
       </div>
     </section>
-    
+
     <section id="skills">
       <div class="container-fluid" data-aos="fade-up">
-        <h1 class="vline text-dark">&nbsp; Skills</h1>
+        <h1 class="vline text-light">&nbsp; Skills</h1>
         <div class="skills">
           <div class="imageicons" data-aos="fade-up">
             <img src="img/skills/html.png" alt="html" title="HTML" />
@@ -182,7 +202,7 @@
               title="Lightroom"
             />
             <img src="img/skills/php.png" alt="php" title="PHP" />
-            <br>
+            <br />
             <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
 
             <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
@@ -205,31 +225,54 @@
           <div class="resume-wrap text-center p-4" data-aos="fade-up">
             <div class="details py-5">
               <h1 class="text-warning">Online Discussion Forum</h1>
-              <p class="fs-4">This Online forum can be used for many purposes, such as
-                helping learners to review material prior to an assignment
-                or exam, involving students in a discussion of the course
-                material before coming to class.</p>
-                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#">View</button>
+              <p class="fs-4">
+                This Online forum can be used for many purposes, such as helping
+                learners to review material prior to an assignment or exam,
+                involving students in a discussion of the course material before
+                coming to class.
+              </p>
+              <button
+                class="btn btn-primary px-5 fs-4"
+                data-bs-toggle="modal"
+                data-bs-target="#"
+              >
+                View
+              </button>
             </div>
           </div>
           <div class="resume-wrap text-center p-4" data-aos="fade-up">
             <div class="details py-5">
               <h1 class="text-warning">Library Management System</h1>
-              <p class="fs-4">A library management system is ERP software that is
-                designed & developed to manage all the in-house functions
-                of a library. A librarian requires maintaining a database
-                of new books.</p>
-                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#libraryproject">View</button>
+              <p class="fs-4">
+                A library management system is ERP software that is designed &
+                developed to manage all the in-house functions of a library. A
+                librarian requires maintaining a database of new books.
+              </p>
+              <button
+                class="btn btn-primary px-5 fs-4"
+                data-bs-toggle="modal"
+                data-bs-target="#libraryproject"
+              >
+                View
+              </button>
             </div>
           </div>
           <div class="resume-wrap text-center p-4" data-aos="fade-up">
             <div class="details py-5">
               <h1 class="text-warning">Hospital Management system</h1>
-              <p class="fs-4">The hospital management system is a computer system that
-                helps in managing the information related to health care.
-                This project includes the registration of patients,
-                storing their details into the system.</p>
-                <button class="btn btn-primary px-5 fs-4" data-bs-toggle="modal" data-bs-target="#hospitalproject">View</button>
+              <p class="fs-4">
+                The hospital management system is a computer system that helps
+                in managing the information related to health care. This project
+                includes the registration of patients, storing their details
+                into the system.
+              </p>
+              <button
+                class="btn btn-primary px-5 fs-4"
+                data-bs-toggle="modal"
+                data-bs-target="#hospitalproject"
+              >
+                View
+              </button>
             </div>
           </div>
         </div>
@@ -262,7 +305,7 @@
           </div>
           <div class="modal-body">
             <img
-              class="responsive"
+              class="img-fluid"
               src="img/hospital.png"
               alt="Hospital Management System"
             />
@@ -298,7 +341,7 @@
           </div>
           <div class="modal-body">
             <img
-              class="responsive"
+              class="img-fluid"
               src="img/library.png"
               alt="Hospital Management System"
             />
@@ -307,9 +350,8 @@
       </div>
     </div>
     <!--Library Modal -->
-<div class="bg-2 img-fluid">
     <section id="contact">
-      <div class="container"  data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
         <h1 class="text-center">&nbsp; Get in Touch</h1>
         <p data-aos="fade-up">
           I'M CURRENTLY AVAILABLE FOR FREELANCE PROJECTS OR FULL-TIME WORK. IF
@@ -347,7 +389,7 @@
         </div>
       </div>
     </section>
-  </div>
+
     <section class="bg-primary">
       <footer>
         <h1>
@@ -357,6 +399,11 @@
         </h1>
       </footer>
     </section>
+    <div class="topArrow" id="topArrow">
+      <span class="btn btn-outline-danger" onclick="topFunction()"
+        ><i class="fas fa-arrow-up"></i
+      ></span>
+    </div>
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
@@ -378,8 +425,10 @@
           var scroll = $(window).scrollTop();
           if (scroll > 300) {
             $(".nav").css("background", "#43809f ");
+            $("#topArrow").css("display", "block");
           } else {
             $(".nav").css("background", "#39a7a7");
+            $("#topArrow").css("display", "none");
           }
         });
       });
@@ -394,6 +443,19 @@
           document.querySelector("body").style.visibility = "visible";
         }
       };
+    </script>
+    <script>
+      var sidenav = document.getElementById("navbar-links");
+      function openNav() {
+        sidenav.style.width = "200px";
+      }
+      function closeNav() {
+        sidenav.style.width = "0";
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </body>
 </html>

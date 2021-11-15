@@ -37,11 +37,6 @@
           <ul id="navlist">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#main"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
                 >About</a
               >
             </li>
@@ -60,336 +55,359 @@
                 >Contact</a
               >
             </li>
+            <li class="nav-item">
+              <a href="#">
+                <img
+                  src="img/dark.png"
+                  id="dark"
+                  onclick="darkMode()"
+                  alt=""
+                  style="cursor: pointer"
+                  width="30px"
+                />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Navbar -->
 
-    <div class="loader-center">
+    <div class="loader-center mt-5">
       <div class="loader"></div>
     </div>
 
-    <div class="bg1 img-fluid">
-      <div class="bg1-overlay img-fluid">
-        <section>
-          <div class="container" id="main" data-aos="fade-up">
-            <p>Hi, my name is</p>
-            <h1 class="display-1">Aarif <span>Khan</span></h1>
-            <h6>I build things for the web.</h6>
-            <h3 id="para">
-              I'm a web developer & programmer living in delhi, india. I make
-              web applications usually with php. My specialty is full website
-              strategy, design and development. If you have a project or
-              creative need that i can help with,
-              <span>please get in touch.</span>
-            </h3>
-          </div>
-        </section>
-      </div>
-    </div>
+    <div class="container">
+      <section>
+        <div class="container-fluid" id="main">
+          <div
+            data-aos="fade-down"
+            class="
+              me
+              d-flex
+              justify-content-evenly
+              align-items-center
+              flex-wrap
+            "
+          >
+            <div class="name text-center">
+              <p>Hi, my name is</p>
+              <h1 class="display-1">Aarif <span>Khan</span></h1>
+              <h6>I build things for the web.</h6>
+            </div>
 
-    <section id="about">
-      <div class="container-fluid" data-aos="fade-up">
-        <h1 class="vline text-light">&nbsp; About Me</h1>
-        <div
-          class="
-            about
-            d-flex
-            flex-column
-            justify-content-around
-            align-items-center
-          "
-        >
-          <img
-            data-aos="fade-up"
-            src="img/me.jpg"
-            width="250px"
-            height="200px"
-            class="my-4 responsive img-fluid rounded-circle"
-            alt="me"
-          />
-          <span class="text-danger fw-bold fs-1 pt-5" data-aos="fade-up"
-            >HELLO!
-          </span>
-          <br />
-          <h3 style="width: 90%" class="py-5 text-center" data-aos="fade-up">
-            My name is Aarif Khan and i enjoy building websites. My interest in
-            web development started in 2015 when i designed a web page as an
-            assignment in a competition.
+            <div class="images">
+              <img
+                src="img/me.jpg"
+                alt="me"
+                id="me"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+
+          <h3 id="para" class="text-center" data-aos="fade-up">
+            I'm a web developer & programmer living in delhi, india. I make web
+            applications usually with php. My specialty is full website
+            strategy, design and development. <br />
+            If you have a project or creative need that i can help with,
+            <span>please get in touch.</span>
           </h3>
-          <div class="alignbtn">
-            <a href="https://www.linkedin.com/in/aarifkhan7896"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="container-fluid" id="education">
-        <h1 class="vline text-dark" data-aos="fade-up">&nbsp; Education</h1>
-        <div class="education">
-          <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-2 m-3">
-              <i class="fas fa-graduation-cap fa-4x"></i>
+      <section>
+        <div class="container-fluid" id="education">
+          <h1 class="vline" data-aos="fade-up">&nbsp; Education</h1>
+          <div class="education">
+            <div class="resume-wrap" data-aos="fade-up">
+              <div class="icon ms-5 py-2 m-3">
+                <i class="fas fa-graduation-cap fa-4x"></i>
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div class="details py-2">
+                <h1>Dr. A.P.J. Abdul Kalam Technical University</h1>
+                <span>Master of Computer Applications</span>
+                <p>(2019 - 2021)</p>
+              </div>
             </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="details py-2">
-              <h1>Dr. A.P.J. Abdul Kalam Technical University</h1>
-              <span>Master of Computer Applications</span>
-              <p>(2019 - 2021)</p>
+            <div class="resume-wrap" data-aos="fade-up">
+              <div class="icon ms-5 py-2 m-3">
+                <i class="fas fa-graduation-cap fa-4x"></i>
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div class="details py-2">
+                <h1>Jamia Hamdard</h1>
+                <span>Bachelor of Computer Applications</span>
+                <p>(2015 - 2018)</p>
+              </div>
             </div>
-          </div>
-          <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-2 m-3">
-              <i class="fas fa-graduation-cap fa-4x"></i>
+            <div class="resume-wrap" data-aos="fade-up">
+              <div class="icon ms-5 py-2 m-3">
+                <i class="fas fa-book-open fa-4x"></i>
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div class="details py-2">
+                <h1>Red Roses Public School</h1>
+                <span>12th (CBSE)</span>
+                <p>(2014 - 2015)</p>
+              </div>
             </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="details py-2">
-              <h1>Jamia Hamdard</h1>
-              <span>Bachelor of Computer Applications</span>
-              <p>(2015 - 2018)</p>
-            </div>
-          </div>
-          <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-2 m-3">
-              <i class="fas fa-book-open fa-4x"></i>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="details py-2">
-              <h1>Red Roses Public School</h1>
-              <span>12th (CBSE)</span>
-              <p>(2014 - 2015)</p>
-            </div>
-          </div>
-          <div class="resume-wrap" data-aos="fade-up">
-            <div class="icon ms-5 py-2 m-3">
-              <i class="fas fa-book-open fa-4x"></i>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="details py-2">
-              <h1>Red Roses Public School</h1>
-              <span>10th (CBSE)</span>
-              <p>(2012 - 2013)</p>
+            <div class="resume-wrap" data-aos="fade-up">
+              <div class="icon ms-5 py-2 m-3">
+                <i class="fas fa-book-open fa-4x"></i>
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div class="details py-2">
+                <h1>Red Roses Public School</h1>
+                <span>10th (CBSE)</span>
+                <p>(2012 - 2013)</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills">
-      <div class="container-fluid" data-aos="fade-up">
-        <h1 class="vline text-light">&nbsp; Skills</h1>
-        <div class="skills">
-          <div class="imageicons" data-aos="fade-up">
-            <img src="img/skills/html.png" alt="html" title="HTML" />
-            <img src="img/skills/css.png" alt="css" title="CSS" />
-            <img
-              src="img/skills/javascript.png"
-              alt="javascript"
-              title="JavaScript"
-            />
-            <img
-              src="img/skills/bootstrap.png"
-              alt="bootstrap"
-              title="Bootstrap"
-            />
-            <img
-              src="img/skills/lightroom.png"
-              alt="lightroom"
-              title="Lightroom"
-            />
-            <img src="img/skills/php.png" alt="php" title="PHP" />
-            <br />
-            <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
+      <section id="skills">
+        <div class="container-fluid" data-aos="fade-up">
+          <h1 class="vline">&nbsp; Skills</h1>
+          <div class="skills">
+            <div class="imageicons" data-aos="fade-up">
+              <img src="img/skills/html.png" alt="html" title="HTML" />
+              <img src="img/skills/css.png" alt="css" title="CSS" />
+              <img
+                src="img/skills/javascript.png"
+                alt="javascript"
+                title="JavaScript"
+              />
+              <img
+                src="img/skills/bootstrap.png"
+                alt="bootstrap"
+                title="Bootstrap"
+              />
+              <img
+                src="img/skills/lightroom.png"
+                alt="lightroom"
+                title="Lightroom"
+              />
+              <img src="img/skills/php.png" alt="php" title="PHP" />
+              <br />
+              <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
 
-            <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
-            <img src="img/skills/c.png" alt="C" title="C" />
-            <img src="img/skills/java.png" alt="java" title="Java" />
-            <img
-              src="img/skills/photoshop.png"
-              alt="photoshop"
-              title="Photoshop"
-            />
-            <img src="img/skills/vscode.png" alt="vscode" title="VSCode" />
+              <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
+              <img src="img/skills/c.png" alt="C" title="C" />
+              <img src="img/skills/java.png" alt="java" title="Java" />
+              <img
+                src="img/skills/photoshop.png"
+                alt="photoshop"
+                title="Photoshop"
+              />
+              <img src="img/skills/vscode.png" alt="vscode" title="VSCode" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container-fluid" id="projects" data-aos="fade-up">
-        <h1 class="vline">&nbsp; Projects</h1>
-        <div class="project">
-          <div class="resume-wrap text-center p-4" data-aos="fade-up">
-            <div class="details py-5">
-              <h1 class="text-warning">Online Discussion Forum</h1>
-              <p class="fs-4">
-                This Online forum can be used for many purposes, such as helping
-                learners to review material prior to an assignment or exam,
-                involving students in a discussion of the course material before
-                coming to class.
-              </p>
-              <button
-                class="btn btn-primary px-5 fs-4"
-                data-bs-toggle="modal"
-                data-bs-target="#"
+      </section>
+      <section>
+        <div class="container-fluid" id="projects" data-aos="fade-up">
+          <h1 class="vline">&nbsp; Projects</h1>
+          <div class="project">
+            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
+              <div class="details py-5">
+                <h1 class="text-warning fw-bold">Online Discussion Forum</h1>
+                <p class="fs-4">
+                  This Online forum can be used for many purposes, such as
+                  helping learners to review material prior to an assignment or
+                  exam, involving students in a discussion of the course
+                  material before coming to class.
+                </p>
+                <button
+                  class="btn btn-primary px-5 fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
+              <div class="details py-5">
+                <h1 class="text-warning fw-bold">Library Management System</h1>
+                <p class="fs-4">
+                  A library management system is ERP software that is designed &
+                  developed to manage all the in-house functions of a library. A
+                  librarian requires maintaining a database of new books.
+                </p>
+                <button
+                  class="btn btn-primary px-5 fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#libraryproject"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
+              <div class="details py-5">
+                <h1 class="text-warning fw-bold">Hospital Management system</h1>
+                <p class="fs-4">
+                  The hospital management system is a computer system that helps
+                  in managing the information related to health care. This
+                  project includes the registration of patients, storing their
+                  details into the system.
+                </p>
+                <button
+                  class="btn btn-primary px-5 fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#hospitalproject"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Hospital Modal -->
+      <div
+        class="modal fade"
+        id="hospitalproject"
+        tabindex="-1"
+        aria-labelledby="hospitalprojectLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title text-dark fs-2 fw-bold"
+                id="hospitalprojectLabel"
               >
-                View
-              </button>
-            </div>
-          </div>
-          <div class="resume-wrap text-center p-4" data-aos="fade-up">
-            <div class="details py-5">
-              <h1 class="text-warning">Library Management System</h1>
-              <p class="fs-4">
-                A library management system is ERP software that is designed &
-                developed to manage all the in-house functions of a library. A
-                librarian requires maintaining a database of new books.
-              </p>
+                Hospital Management System
+              </h5>
               <button
-                class="btn btn-primary px-5 fs-4"
-                data-bs-toggle="modal"
-                data-bs-target="#libraryproject"
-              >
-                View
-              </button>
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-          </div>
-          <div class="resume-wrap text-center p-4" data-aos="fade-up">
-            <div class="details py-5">
-              <h1 class="text-warning">Hospital Management system</h1>
-              <p class="fs-4">
-                The hospital management system is a computer system that helps
-                in managing the information related to health care. This project
-                includes the registration of patients, storing their details
-                into the system.
-              </p>
-              <button
-                class="btn btn-primary px-5 fs-4"
-                data-bs-toggle="modal"
-                data-bs-target="#hospitalproject"
-              >
-                View
-              </button>
+            <div class="modal-body">
+              <div class="smallImg d-flex justify-content-evenly">
+                <img
+                  src="img/library/home.png"
+                  alt="home"
+                  class="img-fluid"
+                  style="width: 40px; height: 40px"
+                  onclick="imgFunction(this)"
+                />
+                <img
+                  src="img/library/about.png"
+                  alt="home"
+                  class="img-fluid"
+                  style="width: 40px; height: 40px"
+                  onclick="imgFunction(this)"
+                />
+                <img
+                  src="img/library/contact.png"
+                  alt="home"
+                  class="img-fluid"
+                  style="width: 40px; height: 40px"
+                  onclick="imgFunction(this)"
+                />
+              </div>
+              <img
+                id="bigImg"
+                class="img-fluid"
+                src="img/hospital.png"
+                alt="Hospital Management System"
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <!--Hospital Modal -->
 
-    <!--Hospital Modal -->
-    <div
-      class="modal fade"
-      id="hospitalproject"
-      tabindex="-1"
-      aria-labelledby="hospitalprojectLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title text-dark fs-2 fw-bold"
-              id="hospitalprojectLabel"
-            >
-              Hospital Management System
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <img
-              class="img-fluid"
-              src="img/hospital.png"
-              alt="Hospital Management System"
-            />
+      <!--Library Modal -->
+      <div
+        class="modal fade"
+        id="libraryproject"
+        tabindex="-1"
+        aria-labelledby="libraryprojectLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title text-dark fs-2 fw-bold"
+                id="libraryprojectLabel"
+              >
+                Library Management System
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                class="img-fluid"
+                src="img/library.png"
+                alt="Hospital Management System"
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <!--Library Modal -->
+      <section id="contact">
+        <div class="container-fluid" data-aos="fade-up">
+          <h1 class="text-center">&nbsp; Get in Touch</h1>
+          <p data-aos="fade-up">
+            I'M CURRENTLY AVAILABLE FOR FREELANCE PROJECTS OR FULL-TIME WORK. IF
+            YOU'RE INTERESTED IN WORKING WITH ME, PLEASE GET IN TOUCH USING ONE
+            OF THE METHODS BELOW. OR FEEL FREE TO JUST SAY HI. I LIKE THAT TOO.
+          </p>
+          <div class="contactlinks" data-aos="fade-up">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/aarifkhan7896/"
+                  ><i class="fab fa-facebook-f mx-1"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/aarifkhan7896"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aarifkhan7896"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/aarifkhan7896"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/aarifkhan7896"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="topArrow" id="topArrow">
+        <span class="btn btn-outline-danger" onclick="topFunction()"
+          ><i class="fas fa-arrow-up"></i
+        ></span>
       </div>
     </div>
-    <!--Hospital Modal -->
-
-    <!--Library Modal -->
-    <div
-      class="modal fade"
-      id="libraryproject"
-      tabindex="-1"
-      aria-labelledby="libraryprojectLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title text-dark fs-2 fw-bold"
-              id="libraryprojectLabel"
-            >
-              Library Management System
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <img
-              class="img-fluid"
-              src="img/library.png"
-              alt="Hospital Management System"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Library Modal -->
-    <section id="contact">
-      <div class="container" data-aos="fade-up">
-        <h1 class="text-center">&nbsp; Get in Touch</h1>
-        <p data-aos="fade-up">
-          I'M CURRENTLY AVAILABLE FOR FREELANCE PROJECTS OR FULL-TIME WORK. IF
-          YOU'RE INTERESTED IN WORKING WITH ME, PLEASE GET IN TOUCH USING ONE OF
-          THE METHODS BELOW. OR FEEL FREE TO JUST SAY HI. I LIKE THAT TOO.
-        </p>
-        <div class="contactlinks" data-aos="fade-up">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/aarifkhan7896/"
-                ><i class="fab fa-facebook-f mx-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/aarifkhan7896"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/aarifkhan7896"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/aarifkhan7896"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/aarifkhan7896"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section class="bg-primary">
       <footer>
         <h1>
@@ -399,11 +417,6 @@
         </h1>
       </footer>
     </section>
-    <div class="topArrow" id="topArrow">
-      <span class="btn btn-outline-danger" onclick="topFunction()"
-        ><i class="fas fa-arrow-up"></i
-      ></span>
-    </div>
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
@@ -414,48 +427,6 @@
     <script src="js/all.min.js"></script>
     <!-- AOS -->
     <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          var scroll = $(window).scrollTop();
-          if (scroll > 300) {
-            $(".nav").css("background", "#43809f ");
-            $("#topArrow").css("display", "block");
-          } else {
-            $(".nav").css("background", "#39a7a7");
-            $("#topArrow").css("display", "none");
-          }
-        });
-      });
-    </script>
-    <script>
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          document.querySelector("body").style.visibility = "hidden";
-          document.querySelector(".loader").style.visibility = "visible";
-        } else {
-          document.querySelector(".loader").style.display = "none";
-          document.querySelector("body").style.visibility = "visible";
-        }
-      };
-    </script>
-    <script>
-      var sidenav = document.getElementById("navbar-links");
-      function openNav() {
-        sidenav.style.width = "200px";
-      }
-      function closeNav() {
-        sidenav.style.width = "0";
-      }
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

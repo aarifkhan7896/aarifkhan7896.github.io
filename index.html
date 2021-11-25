@@ -8,415 +8,221 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aos.css" />
-    <title>Aarif Khan | Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aarif Khan</title>
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav
-      class="
-        nav
-        d-flex
-        justify-content-between
-        align-items-center
-        px-5
-        fixed-top
-      "
-    >
-      <div class="nav-brand">
-        <h1><a href="#main">Portfolio</a></h1>
-      </div>
-      <div id="navbars">
-        <span><i class="fas fa-bars" onclick="openNav()"></i></span>
-      </div>
-      <div id="collapse">
-        <div class="navbar-links" id="navbar-links">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <ul id="navlist">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#main"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#education"
-                >Resume</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#projects"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#">
-                <img
-                  src="img/dark.png"
-                  id="dark"
-                  onclick="darkMode()"
-                  alt=""
-                  style="cursor: pointer"
-                  width="30px"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- navbar -->
+    <nav class="sticky-top">
+      <h1 class="fw-bold text-muted py-3 animate__animated animate__tada">Portfolio</h1>
+      <i class="fas fa-bars fa-2x"></i>
+      <div class="navbar">
+        <ul id="navbar">
+          <li class="animate__animated animate__fadeInDown"><a href="#main" >Home</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="#about">About</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="#education">Resume</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="#project">Projects</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
-    <!-- Navbar -->
+    <!-- navbar -->
 
-    <div class="loader-center mt-5">
-      <div class="loader"></div>
-    </div>
-
-    <div class="container">
-      <section>
-        <div class="container-fluid" id="main">
-          <div
-            data-aos="fade-down"
-            class="
-              me
-              d-flex
-              justify-content-evenly
-              align-items-center
-              flex-wrap
-            "
-          >
-            <div class="name text-center">
-              <p>Hi, my name is</p>
-              <h1 class="display-1">Aarif <span>Khan</span></h1>
-              <h6>I build things for the web.</h6>
-            </div>
-
-            <div class="images">
-              <img
-                src="img/me.jpg"
-                alt="me"
-                id="me"
-                class="img-fluid rounded-circle"
-              />
-            </div>
-          </div>
-
-          <h3 id="para" class="text-center" data-aos="fade-up">
-            I'm a web developer & programmer living in delhi, india. I make web
-            applications usually with php. My specialty is full website
-            strategy, design and development. <br />
-            If you have a project or creative need that i can help with,
-            <span>please get in touch.</span>
-          </h3>
-        </div>
-      </section>
-
-      <section>
-        <div class="container-fluid" id="education">
-          <h1 class="vline" data-aos="fade-up">&nbsp; Education</h1>
-          <div class="education">
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-2 m-3">
-                <i class="fas fa-graduation-cap fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-2">
-                <h1>Dr. A.P.J. Abdul Kalam Technical University</h1>
-                <span>Master of Computer Applications</span>
-                <p>(2019 - 2021)</p>
-              </div>
-            </div>
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-2 m-3">
-                <i class="fas fa-graduation-cap fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-2">
-                <h1>Jamia Hamdard</h1>
-                <span>Bachelor of Computer Applications</span>
-                <p>(2015 - 2018)</p>
-              </div>
-            </div>
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-2 m-3">
-                <i class="fas fa-book-open fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-2">
-                <h1>Red Roses Public School</h1>
-                <span>12th (CBSE)</span>
-                <p>(2014 - 2015)</p>
-              </div>
-            </div>
-            <div class="resume-wrap" data-aos="fade-up">
-              <div class="icon ms-5 py-2 m-3">
-                <i class="fas fa-book-open fa-4x"></i>
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div class="details py-2">
-                <h1>Red Roses Public School</h1>
-                <span>10th (CBSE)</span>
-                <p>(2012 - 2013)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="container-fluid" data-aos="fade-up">
-          <h1 class="vline">&nbsp; Skills</h1>
-          <div class="skills">
-            <div class="imageicons" data-aos="fade-up">
-              <img src="img/skills/html.png" alt="html" title="HTML" />
-              <img src="img/skills/css.png" alt="css" title="CSS" />
-              <img
-                src="img/skills/javascript.png"
-                alt="javascript"
-                title="JavaScript"
-              />
-              <img
-                src="img/skills/bootstrap.png"
-                alt="bootstrap"
-                title="Bootstrap"
-              />
-              <img
-                src="img/skills/lightroom.png"
-                alt="lightroom"
-                title="Lightroom"
-              />
-              <img src="img/skills/php.png" alt="php" title="PHP" />
-              <br />
-              <img src="img/skills/jquery.png" alt="jquery" title="jQuery" />
-
-              <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" />
-              <img src="img/skills/c.png" alt="C" title="C" />
-              <img src="img/skills/java.png" alt="java" title="Java" />
-              <img
-                src="img/skills/photoshop.png"
-                alt="photoshop"
-                title="Photoshop"
-              />
-              <img src="img/skills/vscode.png" alt="vscode" title="VSCode" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container-fluid" id="projects" data-aos="fade-up">
-          <h1 class="vline">&nbsp; Projects</h1>
-          <div class="project">
-            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
-              <div class="details py-5">
-                <h1 class="text-warning fw-bold">Online Discussion Forum</h1>
-                <p class="fs-4">
-                  This Online forum can be used for many purposes, such as
-                  helping learners to review material prior to an assignment or
-                  exam, involving students in a discussion of the course
-                  material before coming to class.
-                </p>
-                <button
-                  class="btn btn-primary px-5 fs-4"
-                  data-bs-toggle="modal"
-                  data-bs-target="#"
-                >
-                  View
-                </button>
-              </div>
-            </div>
-            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
-              <div class="details py-5">
-                <h1 class="text-warning fw-bold">Library Management System</h1>
-                <p class="fs-4">
-                  A library management system is ERP software that is designed &
-                  developed to manage all the in-house functions of a library. A
-                  librarian requires maintaining a database of new books.
-                </p>
-                <button
-                  class="btn btn-primary px-5 fs-4"
-                  data-bs-toggle="modal"
-                  data-bs-target="#libraryproject"
-                >
-                  View
-                </button>
-              </div>
-            </div>
-            <div class="resume-wrap text-center p-4" data-aos="zoom-in-down">
-              <div class="details py-5">
-                <h1 class="text-warning fw-bold">Hospital Management system</h1>
-                <p class="fs-4">
-                  The hospital management system is a computer system that helps
-                  in managing the information related to health care. This
-                  project includes the registration of patients, storing their
-                  details into the system.
-                </p>
-                <button
-                  class="btn btn-primary px-5 fs-4"
-                  data-bs-toggle="modal"
-                  data-bs-target="#hospitalproject"
-                >
-                  View
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Hospital Modal -->
-      <div
-        class="modal fade"
-        id="hospitalproject"
-        tabindex="-1"
-        aria-labelledby="hospitalprojectLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5
-                class="modal-title text-dark fs-2 fw-bold"
-                id="hospitalprojectLabel"
-              >
-                Hospital Management System
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="smallImg d-flex justify-content-evenly">
-                <img
-                  src="img/library/home.png"
-                  alt="home"
-                  class="img-fluid"
-                  style="width: 40px; height: 40px"
-                  onclick="imgFunction(this)"
-                />
-                <img
-                  src="img/library/about.png"
-                  alt="home"
-                  class="img-fluid"
-                  style="width: 40px; height: 40px"
-                  onclick="imgFunction(this)"
-                />
-                <img
-                  src="img/library/contact.png"
-                  alt="home"
-                  class="img-fluid"
-                  style="width: 40px; height: 40px"
-                  onclick="imgFunction(this)"
-                />
-              </div>
-              <img
-                id="bigImg"
-                class="img-fluid"
-                src="img/hospital.png"
-                alt="Hospital Management System"
-              />
-            </div>
-          </div>
-        </div>
+   <div class="div top">
+      <!-- home -->
+    <section id="main">
+      <div class="container">
+        <span class="text-muted fs-2">Hi, my name is</span>
+        <h1 class="animate__animated animate__zoomInDown"><span class="text-warning">AARIF</span> KHAN</h1>
+        <h3 class="animate__animated animate__backInUp">I'm a web developer & programmer living in Delhi, India.</h3>
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_tec0lk49.json"
+          background="transparent"
+          speed="1"
+          style="width: 70px; height: 100px; margin: auto; margin-top: 9rem"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
-      <!--Hospital Modal -->
-
-      <!--Library Modal -->
-      <div
-        class="modal fade"
-        id="libraryproject"
-        tabindex="-1"
-        aria-labelledby="libraryprojectLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5
-                class="modal-title text-dark fs-2 fw-bold"
-                id="libraryprojectLabel"
-              >
-                Library Management System
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <img
-                class="img-fluid"
-                src="img/library.png"
-                alt="Hospital Management System"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Library Modal -->
-      <section id="contact">
-        <div class="container-fluid" data-aos="fade-up">
-          <h1 class="text-center">&nbsp; Get in Touch</h1>
-          <p data-aos="fade-up">
-            I'M CURRENTLY AVAILABLE FOR FREELANCE PROJECTS OR FULL-TIME WORK. IF
-            YOU'RE INTERESTED IN WORKING WITH ME, PLEASE GET IN TOUCH USING ONE
-            OF THE METHODS BELOW. OR FEEL FREE TO JUST SAY HI. I LIKE THAT TOO.
-          </p>
-          <div class="contactlinks" data-aos="fade-up">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/aarifkhan7896/"
-                  ><i class="fab fa-facebook-f mx-1"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/aarifkhan7896"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/aarifkhan7896"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/aarifkhan7896"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/aarifkhan7896"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <div class="topArrow" id="topArrow">
-        <span class="btn btn-outline-danger" onclick="topFunction()"
-          ><i class="fas fa-arrow-up"></i
-        ></span>
-      </div>
-    </div>
-    <section class="bg-primary">
-      <footer>
-        <h1>
-          <a href="https://www.linkedin.com/in/aarifkhan7896"
-            >Designed & Built by Aarif Khan</a
-          >
-        </h1>
-      </footer>
     </section>
+    <!-- home -->
+
+    <!-- about -->
+    <section id="about">
+      <h1 class="text-center" data-aos="fade-right">About</h1>
+      <div class="container">
+        <div class="about d-flex flex-wrap justify-content-around text-center">
+          <div class="aboutItems" data-aos="flip-left">
+            <i class="material-icons text-primary" style="font-size:54px;">bolt</i>
+            <h2 class="fs-1 fw-bold">Fast</h2>
+            <p class="text-muted fs-3">
+              Fast load times and lag free <br />
+              interaction
+            </p>
+          </div>
+          <div class="aboutItems" data-aos="flip-left">
+            <i class="material-icons text-primary" style="font-size:54px;">devices</i>
+            <h2 class="fs-1 fw-bold">Responsive</h2>
+            <p class="text-muted fs-3">
+              My layouts will work on any <br />
+               device, big or small.
+            </p>
+          </div>
+          <div class="aboutItems" data-aos="flip-left">
+            <i class="material-icons text-primary" style="font-size:54px;">monitor_heart</i>
+            <h2 class="fs-1 fw-bold">Dynamic</h2>
+            <p class="text-muted fs-3">
+              I love making pages come 
+              to <br /> life.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6" id="me" data-aos="fade-up">
+            <img src="img/me.jpg" alt="me" class="img-fluid rounded-circle" id="photo"/>
+            <h2 class="py-5">
+              My specialty is full website strategy, design and development. If
+              you have a project or creative need that i can help with, please
+              get in touch.
+            </h2>
+          </div>
+          <div class="col-md-6 col-sm-6" data-aos="fade-down">
+            <h1 class="text-center">Skills</h1>
+            <div class="skills">
+              <img src="img/skills/html.png" alt="html" />
+              <img src="img/skills/css.png" alt="css" />
+              <img src="img/skills/javascript.png" alt="javascript" />
+              <br />
+              <img src="img/skills/jquery.png" alt="jquery" />
+              <img src="img/skills/bootstrap.png" alt="bootstrap" />
+              <img src="img/skills/java.png" alt="java" />
+              <br />
+              <img src="img/skills/php.png" alt="php" />
+              <img src="img/skills/photoshop.png" alt="photoshop" />
+              <img src="img/skills/mysql.png" alt="photoshop" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- education -->
+    <section id="education">
+      <h1 data-aos="fade-right">Education</h1>
+
+      <div class="container">
+        <div class="educationItems">
+          <div class="row">
+            <div class="col-md-6" id="eduItemOne">
+              <div class="item" data-aos="fade-up">
+                <h2 class="text-warning fw-bold">Dr. A.P.J. Abdul Kalam Technical University</h2>
+                <h2 class="text-muted">Master of Computer Applications</h2>
+                <h3 class="lead fs-3">(2019 - 2021)</h3>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <h2 class="text-warning fw-bold">Red Roses Public School</h2>
+                <h2 class="text-muted">12th (CBSE)</h2>
+                <h3 class="lead fs-3">(2014 - 2015)</h3>
+              </div>
+            </div>
+            <div class="col-md-6" id="eduItemTwo">
+              <div class="item" data-aos="fade-up">
+                <h2 class="text-warning fw-bold">Jamia Hamdard</h1>
+                <h2 class="text-muted">Bachelor of Computer Applications</h2>
+                <h3 class="lead fs-3">(2015 - 2018)</h3>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <h2 class="text-warning fw-bold">Red Roses Public School</h2>
+                <h2 class="text-muted">12th (CBSE)</h2>
+                <h3 class="lead fs-3">(2012 - 2013)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education -->
+
+    <!-- project -->
+    <section id="project">
+      <h2 data-aos="fade-right">Projects</h2>
+      <div class="container">
+        <div class="projectItems">
+          <div class="item" data-aos="fade-up">
+            <h1 class="fs-2 text-warning fw-bold">Online Discussion Forum</h1>
+            <p class="fs-4 text-muted">This Online forum can be used for many purposes, such as helping learners to review material prior to an exam, involving students in a discussion of the course material before coming to class.</p>
+            <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <h1 class="fs-2 text-warning fw-bold">Library Management System</h1>
+            <p class="fs-4 text-muted">A library management system is ERP software that is designed & developed to manage all the in-house functions of a library. A librarian requires maintaining a database of new books.</p>
+            <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+          </div>
+          <span id="showMore">
+            <div class="item" data-aos="fade-up">
+              <h1 class="fs-2 text-warning fw-bold">Hospital Management system</h1>
+              <p class="fs-4 text-muted">The hospital management system is a computer system that helps in managing the information related to health care. This project includes the registration of patients, storing their details into the system.</p>
+              <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+            </div>
+          </span>
+        </div>
+          <div class="projectBtn">
+            <h1 id="btnMore" class="btn btn-outline-secondary fs-2 px-5 py-1"><i class="fas fa-angle-down fa-2x"></i></h1>
+          </div>
+      </div>
+    </section>
+    <!-- project -->
+   </div>
+
+    <div class="bottom">
+      <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <!-- <i class="fas fa-arrow-up fa-4x btn btn-outline-secondary"></i> -->
+        <ul>
+          <li>
+            <a  href="https://www.facebook.com/aarifkhan7896/"
+              ><i class="fab fa-facebook-f mx-1"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/aarifkhan7896"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aarifkhan7896"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/aarifkhan7896"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/aarifkhan7896"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+        <h1 class="text-muted fs-4">Made with <i class="fas fa-heart"></i> by Aarif Khan</h1>
+        
+      </div>
+      <h1 id="topArrow" class="btn btn-outline-secondary mt-5" onclick="topHead()"><i class="fas fa-angle-up fa-2x"></i>&nbsp; <span class="fs-2">Top</span></h1>
+    </section>
+    <!-- contact -->
+    </div>
+
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
@@ -427,6 +233,12 @@
     <script src="js/all.min.js"></script>
     <!-- AOS -->
     <script src="js/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
+
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

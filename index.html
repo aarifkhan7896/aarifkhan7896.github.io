@@ -22,7 +22,7 @@
   <body>
     <!-- navbar -->
     <nav class="sticky-top">
-      <h1 class="fw-bold text-muted py-3 animate__animated animate__tada">Portfolio</h1>
+      <h1 class="fw-bold text-muted py-3">Portfolio</h1>
       <i class="fas fa-bars fa-2x"></i>
       <div class="navbar">
         <ul id="navbar">
@@ -142,7 +142,7 @@
               </div>
               <div class="item" data-aos="fade-up">
                 <h2 class="text-warning fw-bold">Red Roses Public School</h2>
-                <h2 class="text-muted">12th (CBSE)</h2>
+                <h2 class="text-muted">10th (CBSE)</h2>
                 <h3 class="lead fs-3">(2012 - 2013)</h3>
               </div>
             </div>
@@ -160,18 +160,18 @@
           <div class="item" data-aos="fade-up">
             <h1 class="fs-2 text-warning fw-bold">Online Discussion Forum</h1>
             <p class="fs-4 text-muted">This Online forum can be used for many purposes, such as helping learners to review material prior to an exam, involving students in a discussion of the course material before coming to class.</p>
-            <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#showOdf" class="fs-4 px-5 btn btn-outline-primary">View</a>
           </div>
           <div class="item" data-aos="fade-up">
-            <h1 class="fs-2 text-warning fw-bold">Library Management System</h1>
-            <p class="fs-4 text-muted">A library management system is ERP software that is designed & developed to manage all the in-house functions of a library. A librarian requires maintaining a database of new books.</p>
-            <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+            <h1 class="fs-2 text-warning fw-bold">Hospital Management system</h1>
+            <p class="fs-4 text-muted">The hospital management system is a computer system that helps in managing the information related to health care. This project includes the registration of patients, storing their details into the system.</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#showHms" class="fs-4 px-5 btn btn-outline-primary">View</a>
           </div>
           <span id="showMore">
             <div class="item" data-aos="fade-up">
-              <h1 class="fs-2 text-warning fw-bold">Hospital Management system</h1>
-              <p class="fs-4 text-muted">The hospital management system is a computer system that helps in managing the information related to health care. This project includes the registration of patients, storing their details into the system.</p>
-              <a href="#" class="fs-4 px-5 btn btn-outline-primary">View</a>
+              <h1 class="fs-2 text-warning fw-bold">Library Management System</h1>
+              <p class="fs-4 text-muted">A library management system is ERP software that is designed & developed to manage all the in-house functions of a library. A librarian requires maintaining a database of new books.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#showLms" class="fs-4 px-5 btn btn-outline-primary">View</a>
             </div>
           </span>
         </div>
@@ -182,6 +182,88 @@
     </section>
     <!-- project -->
    </div>
+
+<!-- projects carousel -->
+  <!-- Online Discussion Forums -->
+<div class="modal fade bg-dark" id="showOdf" tabindex="-1" aria-labelledby="odf" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark fs-1" id="odf">Online Discussion Forum</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/projects/od1.png" alt="img">
+          </div>
+          <div class="item">
+            <img src="img/projects/od2.png" alt="img">
+          </div>
+          <div class="item">
+            <img src="img/projects/od3.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Online Discussion Forums -->
+
+  <!-- Hospital Management System -->
+  <div class="modal fade bg-dark" id="showHms" tabindex="-1" aria-labelledby="hms" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark fs-1" id="hms">Hospital Management System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="img/projects/hms1.png" alt="img">
+            </div>
+            <div class="item">
+              <img src="img/projects/hms2.png" alt="img">
+            </div>
+            <div class="item">
+              <img src="img/projects/hms3.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hospital Management System -->
+
+  <!-- Library -->
+  <div class="modal fade bg-dark" id="showLms" tabindex="-1" aria-labelledby="lms" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark fs-1" id="lms">Library Management System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="img/projects/sl1.png" alt="img">
+            </div>
+            <div class="item">
+              <img src="img/projects/sl2.png" alt="img">
+            </div>
+            <div class="item">
+              <img src="img/projects/sl3.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Library -->
+<!-- projects carousel -->
+
+
 
     <div class="bottom">
       <!-- contact -->
@@ -222,7 +304,6 @@
     </section>
     <!-- contact -->
     </div>
-
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->

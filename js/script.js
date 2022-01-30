@@ -42,3 +42,6 @@ $(document).ready(function () {
 slideTop.onclick = function(){
   document.body.slideTop=0;
 }
+AOS.init({
+  duration: 1000,
+});

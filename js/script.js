@@ -1,50 +1,44 @@
-// Toggle Navbar
-$(document).ready(function(){
-  $(".fa-bars").click(function(){
-    $("#navbar").slideToggle();
-  })
+const bar = document.getElementById('bar');
+const sidebar = document.getElementById('nav');
+const closeBar = document.getElementById('closeBar');
+const links = document.querySelectorAll('#link');
+const dark = document.getElementById('dark');
+const slideTop = document.getElementById('#top');
 
-// scroll effect on header
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll>300){
-      $("nav").css({"background-color":"#0a192f","padding":"5px 20px","transition":"0.5s"});
-    }else{
-      $("nav").css({"background-color":"#1a1a1a","padding":"15px 20px","transition":"0.5s"});
-    }
-  })
+bar.onclick = function(){
+  sidebar.style.width="250px"
+}
+closeBar.onclick = function(){
+  sidebar.style.width="0";
+}
 
-// toggle projects
-  $("#btnMore").click(function(){
-    $("#showMore").slideToggle();
-    $("#btnMore").html('<i class="fas fa-angle-up fa-2x"></i>');
+links.forEach((link,index)=>{
+  link.addEventListener('click',()=>{
+    links.forEach((link)=>{
+      link.style.backgroundColor="#242424";
+      link.style.color="gray";
+    })
+    link.style.backgroundColor="#333";
+    link.style.color="#fff";
+    sidebar.style.width="0";
   })
-
-// owl-carousel
-  $(".owl-carousel").owlCarousel({
-    loop:true,
-    dots:false,
-    nav:false,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:1
-      },
-      1200:{
-        items:1
-      }
-    }
-  })
-
 })
 
-// scroll top
-function topHead() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+dark.onclick=function(){
+  document.body.classList.toggle('toggle');
+}
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 700) {
+      $(".top").css("display", "block");
+    } else {
+      $(".top").css("display", "none");
+    }
+  });
+});
+
+slideTop.onclick = function(){
+  document.body.slideTop=0;
 }

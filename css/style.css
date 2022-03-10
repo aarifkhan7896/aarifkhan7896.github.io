@@ -345,12 +345,12 @@ body {
 }
 
 #education ul li:nth-child(3n + 1) {
-  border-left: 2.5rem solid teal;
+  border-left: 1.5rem solid teal;
 }
 
 #education ul li:nth-child(3n - 1),
 #education ul li:nth-child(3n - 3) {
-  border-left: 2.5rem solid darkseagreen;
+  border-left: 1.5rem solid darkseagreen;
 }
 
 #education ul li {
@@ -388,104 +388,57 @@ body {
   font-size: 1.5rem;
 }
 
-#project {
-  padding: 8rem 0;
+#myProjects {
+  padding: 10rem 0;
 }
 
-#project .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5rem 0;
-}
-
-#project .heading h1 {
+#myProjects h1 {
   font-size: 3rem;
-  color: gray;
+  color: var(--secondaryColor);
+  margin-bottom: 2rem;
 }
 
-#project .leftside::before,
-#project .rightside::after {
-  content: "";
+#myProjects h1::after {
   display: block;
-  background-color: grey;
-  width: 25rem;
-  height: 0.1rem;
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  margin: auto;
+  background-color: gray;
 }
 
-#project .cardWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+#myProjects .projectCard {
+  width: 40rem;
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.3), 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.3), 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
   padding: 1rem;
+  margin: 2.5rem;
 }
 
-#project .cardWrapper .card {
-  border: 1px solid grey;
-  width: 30rem;
-  margin: 3rem auto;
+#myProjects .projectCard .imgDiv {
   height: 25rem;
   overflow: hidden;
-  -webkit-box-shadow: -5px 0 5px -3px #333, 5px 0 5px -3px #333;
-          box-shadow: -5px 0 5px -3px #333, 5px 0 5px -3px #333;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+}
+
+#myProjects .projectCard .imgDiv img {
+  -webkit-transition: all 15s;
+  transition: all 15s;
   cursor: pointer;
 }
 
-#project .cardWrapper .card:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-#project .cardWrapper .card .dots {
-  background-color: grey;
-  height: 4rem;
-  padding: 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-}
-
-#project .cardWrapper .card .dots .dot {
-  background-color: lavender;
-  border-radius: 50%;
-  height: 0.8rem;
-  width: 0.8rem;
-  position: absolute;
-  right: 0;
-  margin: 0 1rem;
-}
-
-#project .cardWrapper .card .projectImg {
-  width: 100%;
-  -webkit-transition: all 15s;
-  transition: all 15s;
-}
-
-#project .cardWrapper .card .projectImg:hover {
+#myProjects .projectCard .imgDiv img:hover {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+#myProjects .projectCard h2 {
+  border-bottom: 1px dashed var(--secondaryColor);
+  margin-top: 1rem;
+}
+
+#myProjects .projectCard p {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
 #social {
@@ -612,7 +565,7 @@ footer span {
 
 @media only screen and (max-width: 300px) {
   html {
-    font-size: 40%;
+    font-size: 30%;
   }
   #social ul li a {
     font-size: 1.5rem;
@@ -621,7 +574,7 @@ footer span {
 
 @media only screen and (max-width: 350px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
   .left h1 {
     font-size: 3rem;
@@ -639,7 +592,7 @@ footer span {
 
 @media only screen and (max-width: 700px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
   .left {
     margin: 0;
